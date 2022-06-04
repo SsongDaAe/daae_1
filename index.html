@@ -1,0 +1,1418 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>신세계면세점</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR|Roboto&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/index.css"  media="screen and (min-width : 851px)" />
+    <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width : 850px)" />
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/ui_common.js"></script>
+    <script src="js/tab.js"></script>
+    <script src="js/mobile.js"></script>
+</head>
+
+<body>
+
+    <a href="#main" id="skip-nav">본문바로가기</a>
+    <div id="wrap">
+        <header id="inner_wrap">
+            <div id="top">
+                <div class="tnb pc">
+                    <ul>
+                        <li><a href="#">KR</a></li>
+                        <li><a href="#">CN</a></li>
+                        <li><a href="#">JP</a></li>
+                        <li><a href="#">EN</a></li>
+                    </ul>
+                    <sapn class="ER pc">
+                        환율
+                        <span>1,185</span>
+                    </sapn>
+                    <a href="#" class="dfs pc">
+                    인터넷면세점</a>
+                </div>
+            </div>
+            <!--//tnb-->
+            <div class="top mobile">
+                    <div id="header">
+                        <h1 class="logo mobile">
+                            <a href="index.html"><img src="img/img_sh_h_logo.png" alt="신세계로고"></a>
+                        </h1>
+                        <a href="#" class="mobile">
+                            <span>메뉴 열기/닫기</span>
+                            <!--<span class="fixed"></span>
+                            <span class="fixed"></span>-->
+                        </a>
+                        <ul class="tnb">
+                            <li><a href="#">KR</a></li>
+                            <li><a href="#">CN</a></li>
+                            <li><a href="#">JP</a></li>
+                            <li><a href="#">EN</a></li>
+                        </ul>
+                        <div class="top_gnb">
+                            <ul class="gnbList">
+                                <li><a href="index.html">HOME</a></li>
+                                <li class="">
+                                    <a href="#">COMPANY</a>
+                                        <div class="subMenu">
+                                            <ul class="subMenuList">
+                                                <li><a href="#">회사소개</a></li>
+                                                <li><a href="#">연혁</a></li>
+                                                <li><a href="#">MEDIA</a></li>
+                                            </ul>
+                                            <button type="button" class="closeSnb"><span>서브 메뉴 닫기</span></button>
+                                        </div>
+                                </li>
+                                <li>
+                                    <a href="#">지점안내<!-- 지점안내 --></a>
+                                    <div class="subMenu">
+                                        <ul class="subMenuList">
+                                            <li><a href="#">명동점<!-- 명동점 --></a></li>
+                                            <li><a href="#">강남점</a></li>
+                                            <li><a href="#">부산점<!-- 부산점 --></a></li>
+                                            <li><a href="#">인천공항점<!-- 인천공항점 --></a></li>
+                                            <li><a href="#">인터넷면세점<!-- 인터넷면세점 --></a></li>
+                                        </ul>
+                                        <button type="button" class="closeSnb"><span>서브 메뉴 닫기</span></button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#">멤버십<!-- 멤버십 --></a>
+                                    <div class="subMenu">
+                                        <ul class="subMenuList">
+                                            <li><a href="#">등급/혜택</a></li>
+                                            <li><a href="#">가입방법</a></li><li><a href="#">제휴혜택</a></li>
+                                            <li><a href="#">회원약관</a></li>
+                                        </ul>
+                                        <button type="button" class="closeSnb"><span>서브 메뉴 닫기</span></button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#">이벤트<!-- 이벤트 --></a>
+                                    <div class="subMenu" style="">
+                                        <ul class="subMenuList">
+                                            <li><a href="#">이벤트</a></li><!-- 이벤트 -->
+                                            <li><a href="#">DM</a></li><!-- DM -->
+                                            <li><a href="#">할인상품</a></li><!--할인상품 -->
+                                        </ul>
+                                        <button type="button" class="closeSnb"><span>서브 메뉴 닫기</span></button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#">브랜드<!-- 브랜드 --></a>
+                                    <div class="subMenu" style="">
+                                        <ul class="subMenuList">
+                                            <li><a href="#">베스트셀러</a></li><!-- 베스트 셀러 -->
+                                        </ul>
+                                        <button type="button" class="closeSnb"><span>서브 메뉴 닫기</span></button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#">쇼핑정보<!-- 쇼핑정보 --></a>
+                                    <div class="subMenu" style="">
+                                        <ul class="subMenuList">
+                                            <li><a href="#">면세 쇼핑가이드</a></li><!-- 면세 쇼핑가이드 -->
+                                            <li><a href="#">공지사항</a></li><!-- 공지사항 -->
+                                            <li><a href="#">선불카드 잔액조회 및 환불안내</a></li><!-- 선불카드 환불안내 -->
+                                            <li><a href="#">스마트선불 이용안내</a></li><!-- 스마트선불 이용안내 -->
+                                            <li><a href="#" onclick="#">1:1문의하기</a></li>
+                                        </ul>
+                                        <button type="button" class="closeSnb"><span>서브 메뉴 닫기</span></button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#">NEWTOPIA</a>
+                                    <div class="subMenu" style="">
+                                        <ul class="subMenuList">							
+                                            <li><a href="#">OUR CONTENTS</a></li>
+                                            <li><a href="#">OUR STORY</a></li>
+                                            <li><a href="#">OUR SNS</a></li>
+                                        </ul>
+                                        <button type="button" class="closeSnb"><span>서브 메뉴 닫기</span></button>
+                                    </div>
+                                </li>
+                                <li class="shGNBListUnder">
+                                    <div>
+                                        <ul class="krLi">
+                                            <li><a href="#">카카오톡으로 회원가입</a></li>
+                                            <li><a href="#">이용약관</a></li><!-- 이용약관 -->
+                                        </ul>
+                                        <ul class="krLi">
+                                            <li><a href="#">개인정보처리방침</a></li><!-- 개인정보처리방침 -->
+                                            <li><a href="#">영상정보처리기기 운영관리방침 </a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                    </ul>
+                        </div>
+                        <ul class="gnb_menu mobile">
+                            <li>
+                                <a href="#">브랜드</a>
+                            </li>
+                            <li>
+                                <a href="#">멤버십</a>
+                            </li>
+                            <li>
+                                <a href="#">이벤트</a>
+                            </li>
+                            <li>
+                                <a href="#">지점안내</a>
+                            </li>
+                            <li>
+                                <a href="#" class="dfs">인터넷 <br/>  면세점</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="aside">
+                        <a href="#" class="share"><img src="img/img_sh_share.png" alt="공유하기"></a>
+                        <a href="#" class="main_top"><img src="img/img_sh_top.png" alt="처음으로 올라가기"></a>
+                    </div>
+                     <div class="text_wrap">
+                            <strong>가장 가까운신세계면세점</strong>
+                            <div class="text">
+                                <ul class="inner_text">
+                                    <li class="Intext">
+                                        <a href="#"><span>인천공항점</span></a>
+                                        <ul class="In_text">
+                                           <li><h2>지점선택</h2></li>
+                                            <li><a href="#">신세계면세점</a></li>
+                                            <li><a href="#">명동점</a></li>
+                                            <li><a href="#">강남점</a></li>
+                                            <li><a href="#">부산점</a></li>
+                                            <li><a href="#">인천공항점</a></li>
+                                            <li>
+                                               <a href="#" class="close"><em>메뉴닫기</em></a>
+                                                <div class="location">
+                                                    <span>내위치</span>
+                                                    <p>고객님과 가장 가까운 지점을 다시 찾습니다.</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <ul class="Info">
+                                <li><span>운영시간</span><span class="in_info">11:00 ~ 18:00</span></li>
+                                <li><span>고객센터</span><span class="in_info">1661-8778</span></li>
+                            </ul><!--명동-->
+                            <ul class="Info">
+                                <li><span>운영시간</span><span class="in_info">11:00 ~ 18:00</span></li>
+                                <li><span>고객센터</span><span class="in_info">1661-8778</span></li>
+                            </ul><!--강남-->
+                            <ul class="Info">
+                                <li>
+                                <span>운영시간</span>
+                                <span class="in_info">화~토 11:00~18:00</span><br>
+                                </li>
+                                <li>
+                                <span class="in_infoI">매주 일・월요일 휴무</span>
+                                </li>
+                                <li>
+                                <span>고객센터</span><span class="in_info">1661-8778</span>
+                                </li>
+                            </ul><!--부산-->
+                             <ul class="Info on">
+                                <li>
+                                <span>운영시간</span>
+                                <span class="in_info">1터미널점:06:30~21:30</span><br>
+                                <span class="in_infoI">(연중무휴,일부매장24시간운영)</span>
+                                </li>
+                                <li>
+                                <span class="in_infoI">2터미널점:06:50~21:30(연중무휴)</span>
+                                </li>
+                                <li>
+                                <span>고객센터</span><span class="in_info1">1661-8778</span>
+                                </li>
+                            </ul><!--인천-->
+                            <ul class="Info pc">
+                                <li>
+                                <span>운영시간</span>
+                                <span class="in_info">11:00 ~ 18:00</span>
+                                </li>
+                                <li>
+                                <span>고객센터</span>
+                                <span class="in_info">1661-8778</span>
+                                </li>
+                            </ul>
+                            <ul class="Info pc">
+                                <li>
+                                <span>운영시간</span>
+                                <span class="in_info">11:00 ~ 18:00<br>연중무휴</span>
+                                </li>
+                                <li>
+                                <span>고객센터</span>
+                                <span class="in_info">1661-8778</span>
+                                </li>
+                            </ul>
+                            
+                            <button class="cupon">
+                                <a href="#">
+                                    <img src="img/img_sh_coupon2.png" alt="쿠폰">
+                                </a>
+                            </button>
+                            </div>
+                            <div class="bannerslide">
+                            <ul class="banner mobile">
+                               <li>
+                                   <a href="#">
+                                    <img src="img/1588816385859_1114505859KR_5_MO.png" alt="[명동점|강남점|부산점|인천공항점]5월 MD 행사">
+                                    </a>
+                                </li>
+                                <li>
+                                   <a href="#">
+                                    <img src="img/103508@MO_KR_M&G_83PAYBACK.png" alt="[명동점|강남점]스마트선불 최대 83만원 PAYBACK!">
+                                    </a>
+                                </li>
+                                <li>
+                                   <a href="#">
+                                    <img src="img/18517@MO_%EB%AA%85%EB%8F%99%EC%A0%90fresh%EC%9D%B4%EB%B2%A4%ED%8A%B8_K.png" alt="[명동점] FRESH 명동점 단독 SET 상품제안전">
+                                    </a>
+                                </li>
+                                <li>
+                                   <a href="#">
+                                    <img src="img/78756@MO_KR_M&G_Wedding.png" alt="[명동점|강남점]행복한 결혼 준비! 웨딩 특별 이벤트">
+                                    </a>
+                                </li>
+                                <li>
+                                   <a href="#">
+                                    <img src="img/13976@MO_%EB%AA%85%EB%8F%99%EC%A0%90%EB%8B%A8%EB%8F%85%EC%9D%B4%EB%B2%A4%ED%8A%B8_K%20copy.png" alt="[명동점]명동점 단독이벤트">
+                                    </a>
+                                </li>
+                           </ul>
+                        </div>
+            </div>
+            
+
+            <div class="gnb">
+                <h1 class="logo pc">
+                    <a href="index.html"><img src="img/PC_BIG_LOGO2.png" alt="신세계로고"></a>
+                </h1>
+                <ul class="gnb_menu pc">
+                    <li>
+                        <a href="#">Company</a>
+                    </li>
+                    <li>
+                        <a href="#">지점안내</a>
+                    </li>
+                    <li>
+                        <a href="#">멤버십</a>
+                    </li>
+                    <li>
+                        <a href="#">이벤트</a>
+                    </li>
+                    <li>
+                        <a href="#">브랜드</a>
+                    </li>
+                    <li>
+                        <a href="#">쇼핑정보</a>
+                    </li>
+                    <li>
+                        <a href="#">New Me,New Now</a>
+                    </li>
+                </ul>
+                
+            </div>
+            <!--//gnb-->
+
+            <div class="inner_gnb on">
+                <div class="sub pc">
+                    <ul class="sub-gnb">
+                        <li><a href="#">회사소개</a></li>
+                        <li><a href="#">MEDIA</a></li>
+                        <li><a href="#">재무정보</a></li>
+                        <li><a href="#">CSR경영</a></li>
+                        <li><a href="#">소비자중심경영</a></li>
+                        <li><a href="#">인재채용</a></li>
+                    </ul>
+
+                    <ul class="sub-gnb">
+                        <li><a href="#">명동점</a></li>
+                        <li><a href="#">강남점</a></li>
+                        <li><a href="#">부산점</a></li>
+                        <li><a href="#">인천공항</a></li>
+                        <li><a href="#">인터넷면세점</a></li>
+                    </ul>
+
+                    <ul class="sub-gnb">
+                        <li><a href="#">등급/혜택</a></li>
+                        <li><a href="#">가입방법</a></li>
+                        <li><a href="#">제휴혜택</a></li>
+                        <li><a href="#">회원약관</a></li>
+                    </ul>
+
+                    <ul class="sub-gnb">
+                        <li><a href="#">이벤트</a></li>
+                        <li><a href="#">DM</a></li>
+                    </ul>
+
+                    <ul class="sub-gnb">
+                        <li><a href="#">브랜드안내</a></li>
+                        <li><a href="#">베스트셀러</a></li>
+                    </ul>
+
+
+                    <ul class="sub-gnb">
+                        <li><a href="#">면세 쇼핑가이드</a></li>
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">선불카드잔액조회/환불</a></li>
+                        <li><a href="#">스마트선불 이용안내</a></li>
+                    </ul>
+
+                    <ul class="sub-gnb">
+                        <li><a href="#">NEW NOW in Korea</a></li>
+                        <li><a href="#">OUR STORY</a></li>
+                        <li><a href="#">OUR SNS</a></li>
+                    </ul>
+
+                </div>
+            </div>
+            <!--//inner_gnb-->
+        </header>
+        <!--//header-->
+
+        <main id="index_main">
+           
+            <div class="inner_img pc">
+                <div class="wrap_img">
+                    <div class="main_wrap">
+                        <ul class="image">
+                            <li><img src="img/img_vsTot_left.jpg" alt=""></li>
+                            <li><img src="img/img_vsMd_left.jpg" alt=""></li>
+                            <li><img src="img/img_vsGn_left.jpg" alt=""></li>
+                            <li><img src="img/img_vsBs_left.jpg" alt=""></li>
+                            <li><img src="img/img_vsIc_left.jpg" alt=""></li>
+                        </ul>
+                
+                        <div class="text_wrap on">
+                            <strong>가장 가까운<br>신세계면세점</strong>
+                            <div class="text">
+                                <ul class="inner_text">
+                                    <li class="Intext">
+                                        <a href="#"><span>인천공항점</span></a>
+                                        <ul class="In_text">
+                                            <li><a href="#">신세계면세점</a></li>
+                                            <li><a href="#">명동점</a></li>
+                                            <li><a href="#">강남점</a></li>
+                                            <li><a href="#">부산점</a></li>
+                                            <li><a href="#">인천공항점</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <ul class="Info"></ul>
+                            <ul class="Info">
+                                <li><span>운영시간</span><span class="in_info">11:00 ~ 18:00</span></li>
+                                <li><span>고객센터</span><span class="in_info">1661-8778</span></li>
+                            </ul>
+                            <ul class="Info">
+                                <li><span>운영시간</span><span class="in_info">11:00 ~ 18:00</span></li>
+                                <li><span>고객센터</span><span class="in_info">1661-8778</span></li>
+                            </ul>
+                            <ul class="Info">
+                                <li>
+                                <span>운영시간</span>
+                                <span class="in_info">화~토 11:00~18:00</span><br>
+                                </li>
+                                <li>
+                                <span class="in_infoI">매주 일・월요일 휴무</span>
+                                </li>
+                                <li>
+                                <span>고객센터</span><span class="in_info">1661-8778</span>
+                                </li>
+                            </ul>
+                             <ul class="Info on">
+                                <li>
+                                <span>운영시간</span>
+                                <span class="in_info">1터미널점:06:30~21:30</span><br>
+                                <span class="in_infoI">(일부매장24시간운영)</span>
+                                </li>
+                                <li>
+                                <span class="in_infoI">2터미널점:06:50~21:30</span>
+                                </li>
+                                <li>
+                                <span>고객센터</span><span class="in_info">1661-8778</span>
+                                </li>
+                            </ul>
+                            <ul class="Info">
+                                <li>
+                                <span>운영시간</span>
+                                <span class="in_info">11:00 ~ 18:00</span>
+                                </li>
+                                <li>
+                                <span>고객센터</span>
+                                <span class="in_info">1661-8778</span>
+                                </li>
+                            </ul>
+                            <ul class="Info">
+                                <li>
+                                <span>운영시간</span>
+                                <span class="in_info">11:00 ~ 18:00<br>연중무휴</span>
+                                </li>
+                                <li>
+                                <span>고객센터</span>
+                                <span class="in_info">1661-8778</span>
+                                </li>
+                            </ul>
+                            
+                            <button class="cupon">
+                                <a href="#">
+                                    <img src="img/img_vis_coupon.png" alt="쿠폰">
+                                </a>
+                            </button>
+                        </div>
+                        
+                
+                    </div>
+                
+                    <div class="banner pc">
+                           <ul class="banner_img">
+                               <li>
+                                   <a href="#">
+                                    <img src="img/md_gnwedding.png" alt="명동점 강남점 웨딩특별이벤트">
+                                    </a>
+                                </li>
+                                <li>
+                                   <a href="#">
+                                    <img src="img/gn_propose.png" alt="강남점의 프로포즈">
+                                    </a>
+                                </li>
+                                <li>
+                                   <a href="#">
+                                    <img src="img/md_event.png" alt="명동점 QEELIN 신규론칭 스페셜 이벤트">
+                                   </a>
+                                </li>
+                                <li>
+                                   <a href="#">
+                                    <img src="img/md_gn_ic_giftcard.png" alt="명동점 강남점 인천공항점 선불카드83만원 PAYBACK">
+                                   </a>
+                                </li>
+                                <li>
+                                   <a href="#">
+                                    <img src="img/bs_giftcard.png" alt="부산점 최대선불카드83만원 PAYBACK">
+                                    </a>
+                                </li>
+                                <li>
+                                   <a href="#">
+                                    <img src="img/all_membership.png" alt="전체지점 제휴카드 멤버십혜택 신용카드 무이자 할부혜택">
+                                   </a>
+                                </li>
+                           </ul>
+                            <div class="main_icon">
+                                <div class="left_icon"><a href="#"><img src="img/arr_vis_left.png" alt="이전버튼"></a></div>
+                                <div class="right_icon"><a href="#"><img src="img/arr_vis_right.png" alt="다음버튼"></a></div>
+                            </div>
+                       </div>
+                </div>
+            </div>
+            
+
+
+            <!--//wrap_img-->
+            <section id="content">
+                <div class="title">
+                    <h2><a href="#">브랜드</a></h2>
+                </div>
+                <div class="contents">
+                    <div class="cont_input">
+                        <span class="cont_text pc">브랜드 검색</span>
+                        <form>
+                            <input type="text" placeholder="찾으시는 브랜드를 입력해 주세요." onfocus="this.placeholder=''" onblur="this.placeholder='찾으시는 브랜드를 입력해 주세요.'">
+                        </form>
+                        <span class="cont_img pc"><a href="#"><img src="img/ico_sh_search.png" alt="검색"></a></span>
+                    </div>
+                    <div class="Search">
+                        <span>추천검색어</span>
+                        <ul>
+                            <li><a href="#">발렌시아가</a></li>
+                            <li><a href="#">지방시</a></li>
+                            <li><a href="#">바이레도</a></li>
+                            <li><a href="#">무스너클</a></li>
+                            <li><a href="#">롤렉스</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </section>
+            <!--//contents-->
+            <section id="content">
+                <div class="New">
+                    <span class="icon_New">
+                        NEW
+                    </span>
+                    <div class="New_titlt">
+                        <a href="#">신규 입점 브랜드</a>
+                    </div>
+                    <div class="New_naviT pc">
+                        <div class="New_navi">
+                            <span class="on">1</span>
+                            <span>/</span>
+                            <span>4</span>
+                        </div>
+
+                        <div class="New_navi">
+                            <span>2</span>
+                            <span>/</span>
+                            <span>4</span>
+                        </div>
+
+                        <div class="New_navi">
+                            <span>3</span>
+                            <span>/</span>
+                            <span>4</span>
+                        </div>
+
+                        <div class="New_navi">
+                            <span>4</span>
+                            <span>/</span>
+                            <span>4</span>
+                        </div>
+                        <div class="New_img">
+                            <a href="#" class="prev"><img src="img/ico_now_prev.png" alt="이전"></a>
+                            <a href="#" class="next"><img src="img/ico_now_next.png" alt="다음"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="New_listT pc">
+                    <div class="New_list">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <dl>
+                                        <dt>임블리</dt>
+                                        <dd>
+                                            <span class="brand">패션잡화</span>
+                                            <span class="Num">02-6288-0722</span>
+                                            <span class="BrandSpot">강남점 2F</span>
+                                        </dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <dl>
+                                        <dt>블리블리</dt>
+                                        <dd>
+                                            <span class="brand">화장품</span>
+                                            <span class="Num">02-6288-0722</span>
+                                            <span class="BrandSpot">강남점 2F</span>
+                                        </dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <dl>
+                                        <dt>생귀</dt>
+                                        <dd>
+                                            <span class="brand">화장품,향수</span>
+                                            <span class="Num">02-6288-0712</span>
+                                            <span class="BrandSpot">강남점 2F</span>
+                                        </dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <dl>
+                                        <dt>아쉬</dt>
+                                        <dd>
+                                            <span class="brand">패션잡화</span>
+                                            <span class="Num">02-6288-0659</span>
+                                            <span class="BrandSpot">강남점 2F</span>
+                                        </dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <dl>
+                                        <dt>APM모나코</dt>
+                                        <dd>
+                                            <span class="brand">시계/쥬얼리</span>
+                                            <span class="Num">02-6288-0831</span>
+                                            <span class="BrandSpot">강남점 2F</span>
+                                        </dd>
+                                    </dl>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="New_list">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <dl>
+                                        <dt>프라코라</dt>
+                                        <dd>
+                                            <span class="brand">화장품</span>
+                                            <span class="Num">02-6370-4242</span>
+                                            <span class="BrandSpot">명동점 12F</span>
+                                        </dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <dl>
+                                        <dt>닥터마틴</dt>
+                                        <dd>
+                                            <span class="brand">패션잡화</span>
+                                            <span class="Num">02-6370-4387</span>
+                                            <span class="BrandSpot">명동점 11F</span>
+                                        </dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <dl>
+                                        <dt>언더아머</dt>
+                                        <dd>
+                                            <span class="brand">패션잡화</span>
+                                            <span class="Num">02-6370-4388</span>
+                                            <span class="BrandSpot">명동점 9F</span>
+                                        </dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <dl>
+                                        <dt>디올</dt>
+                                        <dd>
+                                            <span class="brand">가방/지갑, 패션잡화</span>
+                                            <span class="Num">032-743-8156</span>
+                                            <span class="BrandSpot">인천공항점 1T</span>
+                                        </dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <dl>
+                                        <dt>스케쳐스</dt>
+                                        <dd>
+                                            <span class="brand">패션잡화</span>
+                                            <span class="Num">032-743-4743</span>
+                                            <span class="BrandSpot">인천공항점 2T</span>
+                                        </dd>
+                                    </dl>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="New_list">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <dl>
+                                        <dt>투쿨포스쿨</dt>
+                                        <dd>
+                                            <span class="brand">국내브랜드</span>
+                                            <span class="Num">032-743-4338</span>
+                                            <span class="BrandSpot">인천공항점 1T</span>
+                                        </dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <dl>
+                                        <dt>애경</dt>
+                                        <dd>
+                                            <span class="brand">국내브랜드</span>
+                                            <span class="Num">032-743-4327</span>
+                                            <span class="BrandSpot">인천공항점 1T</span>
+                                        </dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <dl>
+                                        <dt>오프화이트</dt>
+                                        <dd>
+                                            <span class="brand">패션잡화</span>
+                                            <span class="Num">02-6370-4385</span>
+                                            <span class="BrandSpot">명동점 9F</span>
+                                        </dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <dl>
+                                        <dt>줄리아루피</dt>
+                                        <dd>
+                                            <span class="brand">화장품</span>
+                                            <span class="Num">02-6370-4117</span>
+                                            <span class="BrandSpot">명동점 10F</span>
+                                        </dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <dl>
+                                        <dt>티르티르</dt>
+                                        <dd>
+                                            <span class="brand">화장품</span>
+                                            <span class="Num">02-6370-4191</span>
+                                            <span class="BrandSpot">명동점 10F</span>
+                                        </dd>
+                                    </dl>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="New_list">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <dl>
+                                        <dt>타임리스</dt>
+                                        <dd>
+                                            <span class="brand">화장품</span>
+                                            <span class="Num">02-6370-4240</span>
+                                            <span class="BrandSpot">명동점 12F</span>
+                                        </dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <dl>
+                                        <dt>에르메스 뷰티</dt>
+                                        <dd>
+                                            <span class="brand">화장품</span>
+                                            <span class="Num">02-6370-4153</span>
+                                            <span class="BrandSpot">명동점 10F</span>
+                                        </dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <dl>
+                                        <dt>아이코스</dt>
+                                        <dd>
+                                            <span class="brand">주류/담배</span>
+                                            <span class="Num">02-6370-4302</span>
+                                            <span class="BrandSpot">명동점 12F</span>
+                                        </dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <dl>
+                                        <dt>마놀로블라닉</dt>
+                                        <dd>
+                                            <span class="brand">패션잡화</span>
+                                            <span class="Num">02-6370-4386</span>
+                                            <span class="BrandSpot">명동점 9F</span>
+                                        </dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <dl>
+                                        <dt>후</dt>
+                                        <dd>
+                                            <span class="brand">국내브랜드</span>
+                                            <span class="Num">032-743-5543</span>
+                                            <span class="BrandSpot">인천공항점 1T</span>
+                                        </dd>
+                                    </dl>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="NEW moblie">
+                    <div class="Newlist mobile">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <dl>
+                                        <dt>임블리</dt>
+                                        <dd>
+                                            <span class="brand">패션잡화</span>
+                                            <span class="Num">02-6288-0722</span>
+                                            <a href="#"><span class="BrandSpot">강남점 2F</span></a>
+                                        </dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <dl>
+                                        <dt>블리블리</dt>
+                                        <dd>
+                                            <span class="brand">화장품</span>
+                                            <span class="Num">02-6288-0722</span>
+                                            <a href="#">
+                                                <span class="BrandSpot">강남점 2F</span>
+                                            </a>
+                                        </dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            </ul>
+                        <ul>
+                                <li>
+                                    <a href="#">
+                                        <dl>
+                                            <dt>생귀</dt>
+                                            <dd>
+                                                <span class="brand">화장품,향수</span>
+                                                <span class="Num">02-6288-0712</span>
+                                                <a href="#">
+                                                <span class="BrandSpot">강남점 2F</span>
+                                            </a>
+                                            </dd>
+                                        </dl>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <dl>
+                                            <dt>아쉬</dt>
+                                            <dd>
+                                                <span class="brand">패션잡화</span>
+                                                <span class="Num">02-6288-0659</span>
+                                                <a href="#">
+                                                <span class="BrandSpot">강남점 2F</span>
+                                            </a>
+                                            </dd>
+                                        </dl>
+                                    </a>
+                                </li>
+                            </ul>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <dl>
+                                        <dt>APM모나코</dt>
+                                        <dd>
+                                            <span class="brand">시계/쥬얼리</span>
+                                            <span class="Num">02-6288-0831</span>
+                                            <a href="#">
+                                                <span class="BrandSpot">강남점 2F</span>
+                                            </a>
+                                        </dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <dl>
+                                        <dt>프라코라</dt>
+                                        <dd>
+                                            <span class="brand">화장품</span>
+                                            <span class="Num">02-6370-4242</span>
+                                            <a href="#">
+                                                <span class="BrandSpot">명동점 12F</span>
+                                            </a>
+                                        </dd>
+                                    </dl>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul>
+                           <li>
+                                <a href="#">
+                                    <dl>
+                                        <dt>닥터마틴</dt>
+                                        <dd>
+                                            <span class="brand">패션잡화</span>
+                                            <span class="Num">02-6370-4387</span>
+                                            <a href="#">
+                                                <span class="BrandSpot">명동점 11F</span>
+                                            </a>
+                                        </dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <dl>
+                                        <dt>언더아머</dt>
+                                        <dd>
+                                            <span class="brand">패션잡화</span>
+                                            <span class="Num">02-6370-4388</span>
+                                            <a href="#">
+                                                <span class="BrandSpot">명동점 9F</span>
+                                            </a>
+                                        </dd>
+                                    </dl>
+                                </a>
+                            </li> 
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <dl>
+                                        <dt>디올</dt>
+                                        <dd>
+                                            <span class="brand">가방/지갑, 패션잡화</span>
+                                            <span class="Num">032-743-8156</span>
+                                            <a href="#"><span class="BrandSpot">인천공항점 1T</span></a>
+                                        </dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <dl>
+                                        <dt>스케쳐스</dt>
+                                        <dd>
+                                            <span class="brand">패션잡화</span>
+                                            <span class="Num">032-743-4743</span>
+                                            <a href="#"><span class="BrandSpot">인천공항점 2T</span></a>
+                                        </dd>
+                                    </dl>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="indicator mobile">
+                            <li class="on">
+                                <a href="#">1번 비주얼</a>
+                            </li>
+                            <li>
+                                <a href="#">2번 비주얼</a>
+                            </li>
+                            <li>
+                                <a href="#">3번 비주얼</a>
+                            </li>
+                            <li>
+                                <a href="#">4번 비주얼</a>
+                            </li>
+                            <li>
+                                <a href="#">5번 비주얼</a>
+                            </li>
+                        </ul>
+                </div>
+            </section>
+            <!--//New-->
+            <section id="content">
+                <div class="title">
+                    <h2><a href="#">이벤트</a></h2>
+                </div>
+                <div class="main_event pc">
+                    <ul>
+                        <li>
+                            <a href="#"><img src="img/sherlockhomes.png" alt="셜록홈즈이벤트"></a>
+                            <p class="img_text"><a href="#">문화 티켓 증정 이벤트</a></p>
+                            <span>2020-02-21 ~ 2020-04-09</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/63421MD.png" alt="gift이벤트"></a>
+                            <p class="img_text"><a href="#">BLOOMING GIFT_강남점</a></p>
+                            <span>2020-02-21 ~ 2020-04-09</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/jewelry.png" alt="주얼리할인"></a>
+                            <p class="img_text"><a href="#">Luxury Watch &amp; Jewelry 즉시할인</a></p>
+                            <span>2020-02-21 ~ 2020-04-09</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/giftcard.png" alt="선불카드"></a>
+                            <p class="img_text"><a href="#">선불카드 최대 83만원 PAYBACK!</a></p>
+                            <span>2020-02-21 ~ 2020-04-09</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="event mobile">
+                    <ul class="event_img">
+                        <li>
+                            <a href="#"><img src="img/14652fresh.jpg" alt="[명동점]FRESH 명동점 단독 SET 상품제안전"></a>
+                            <p class="img_text"><a href="#">FRESH 명동점 단독 SET 상품제안전</a></p>
+                            <span>2020-04-10 ~ 2020-05-28</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/9089KR_MINI_%EB%AA%85%EB%8F%99_WJ.png" alt="[명동점]Luxury Watch & Jewelry 즉시할인"></a>
+                            <p class="img_text"><a href="#">Luxury Watch & Jewelry 즉시할인</a></p>
+                            <span>2020-04-10 ~ 2020-05-28</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/jewelry.png" alt="주얼리할인"></a>
+                            <p class="img_text"><a href="#">Luxury Watch &amp; Jewelry 즉시할인</a></p>
+                            <span>2020-02-21 ~ 2020-04-09</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/giftcard.png" alt="선불카드"></a>
+                            <p class="img_text"><a href="#">선불카드 최대 83만원 PAYBACK!</a></p>
+                            <span>2020-02-21 ~ 2020-04-09</span>
+                        </li>
+                    </ul>
+                    <ul class="indicator mobile">
+                            <li class="on">
+                                <a href="#">1번 비주얼</a>
+                            </li>
+                            <li>
+                                <a href="#">2번 비주얼</a>
+                            </li>
+                            <li>
+                                <a href="#">3번 비주얼</a>
+                            </li>
+                            <li>
+                                <a href="#">4번 비주얼</a>
+                            </li>
+                        </ul>
+                </div>
+            </section>
+            <!--//main_event-->
+            <section id="content">
+                <div class="title">
+                    <h2>
+                        <a href="#">멤버쉽</a>
+                    </h2>
+                </div>
+                <div class="Membership pc">
+                    <div class="card_box">
+                        <div class="card_info">
+                            <span>등급 및 혜택 안내</span>
+                            <ul class="card_list">
+                                <li class="on"><a href="#">BLACK VIP</a></li>
+                                <li>
+                                    <a href="#">BLACK</a></li>
+                                <li><a href="#">GOLD</a></li>
+                                <li><a href="#">SILVER</a></li>
+                            </ul>
+                        </div>
+                        <div class="card">
+                            <div class="card_img on">
+                                <img src="img/img_card_bv.png" alt="블랙vip">
+                                <div class="card_text">
+                                    <strong>BLACK VIP</strong>
+                                    <p>BLACK 멤버십 기본혜택<br>
+                                        특별혜택 : 명동점/강남점 THE BLACK LOUNGE 이용</p>
+                                </div>
+                                <a href="#">등급 혜택보기</a>
+                            </div>
+                            <div class="card_img">
+                                <img src="img/img_card_b.png" alt="블랙">
+                                <div class="card_text">
+                                    <strong>BLACK</strong>
+                                    <p>최대 20% OFF<br>
+                                        + 전용이벤트 추가혜택</p>
+                                </div>
+                                <a href="#">등급 혜택보기</a>
+                            </div>
+                            <div class="card_img">
+                                <img src="img/img_card_g.png" alt="골드">
+                                <div class="card_text">
+                                    <strong>GOLD</strong>
+                                    <p>최대 15% OFF</p>
+                                </div>
+                                <a href="#">등급 혜택보기</a>
+                            </div>
+                            <div class="card_img">
+                                <img src="img/img_card_s.png" alt="실버">
+                                <div class="card_text">
+                                    <strong>SILVER</strong>
+                                    <p>최대 10% OFF</p>
+                                </div>
+                                <a href="#">등급 혜택보기</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="kakao pc">
+                        <div class="kakao_bg"></div>
+                        <div class="kakao_t">
+                            <p>간편회원가입</p>
+                            <span>쉽고 간편한 회원가입</span>
+                        </div>
+                        <div class="kakao_img">
+                            <img src="img/img_qrCode_kr.jpg" alt="QR코드">
+                            <p class="img_T">카카오톡으로 간편가입 QR</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="kakaojoin mobile">
+                    <strong>간편 회원가입</strong>
+                    <div class="kakao mobile">
+                        <a href="#">카카오톡으로 회원가입</a>
+                    </div>
+                    <p>카카오톡을 통해 쉽고 빠르게 신세계면세점의 회원이 되어보세요.</p>
+                </div>
+            </section>
+            <!--//Membership-->
+            
+            <section id="content">
+                <div class="title_Me pc">
+                    <h2>
+                        <a href="#">New Me,New Now</a>
+                    </h2>
+                </div>
+                <div class="NewMe pc">
+                    <div class="New_left">
+                        <div class="New_leftT">
+                            <div class="left_top">
+                                <a href="#"><strong>2020<br>JUST ARRIVED!</strong></a>
+                            </div>
+                            <p>새해에 도착한<br>트렌드 컬러</p>
+                            <a href="#" class="view">VIEW</a>
+                        </div>
+                        <div class="New_leftT">
+                            <div class="left_top">
+                                <a href="#"><strong>Holiday<br>Limited Collection</strong></a>
+                            </div>
+                            <p>두근두근 가슴 뛰는 크리스마스와 연말,<br>
+                                당신을 반짝반짝 빛내 줄<br>
+                                ‘2019 홀리데이 한정판’이 도착했다!</p>
+                            <a href="#" class="view">VIEW</a>
+                        </div>
+
+                        <div class="New_leftT">
+                            <div class="left_top">
+                                <a href="#"><strong>신세계면세점의<br>NEW MODEL! 서강준</strong></a>
+                            </div>
+                            <p>한층 깊어진 연기력으로<br>
+                                믿고 보는 배우로 등극한 그가<br>
+                                신세계면세점의 뉴 모델이 되었습니다.
+                            </p>
+                            <a href="#" class="view">VIEW</a>
+                        </div>
+
+                        <div class="New_Lnavi">
+                            <span>1</span>
+                            <span>/</span>
+                            <span>3</span>
+                        </div>
+                        <div class="New_Lnavi">
+                            <span>2</span>
+                            <span>/</span>
+                            <span>3</span>
+                        </div>
+                        <div class="New_Lnavi">
+                            <span>3</span>
+                            <span>/</span>
+                            <span>3</span>
+                        </div>
+                        <div class="New_LnaviI">
+                            <a href="#" class="prev"><img src="img/ico_now_prev.png" alt="이전"></a>
+                            <a href="#" class="next"><img src="img/ico_now_next.png" alt="다음"></a>
+                        </div>
+                    </div>
+                    <div class="New_right">
+                        <div class="New_rightI on">
+                            <img src="img/22520Main_trend_1.png" alt="네오민트">
+                        </div>
+                        <div class="New_rightI">
+                            <img src="img/19336main_trend_12.png" alt="홀리데이">
+                        </div>
+                        <div class="New_rightI">
+                            <img src="img/5707211%EC%9B%94_%ED%8A%B8%EB%A0%8C%EB%93%9C_%EB%A9%94%EC%9D%B8%EB%B0%B0%EB%84%88_%EC%84%9C%EA%B0%95%EC%A4%80.png" alt="서강준">
+                        </div>
+                    </div>
+                </div>
+                <div class="title mobile">
+                    <h2><a href="#">NEWTOPIA</a></h2>
+                </div>
+                    <div class="newtopia mobile">
+                        <a href="#"><img src="img/7395722520Main_trend_1.jpg" alt="아스트로 모바일 배경화면"></a>
+                    </div>
+                    <div class="newtopia_text mobile">
+                        <strong>신세계면세점이 <br>준비한 작은선물</strong>
+                        <p>아스트로 모바일 배경화면을
+                        <br>다운로드하세요!</p>
+                        <a href="#" class="VIEW">VIEW</a>
+                    </div>
+            </section>
+            <!--//NewMe-->
+
+            <section id="content">
+                <div class="title_In pc">
+                    <h2>
+                        <a href="https://www.instagram.com/shinsegaedutyfree/" target="_blank">INSTAGRAM</a>
+                    </h2>
+                </div>
+                <div class="title mobile">
+                    <h2>
+                        <a href="https://www.instagram.com/shinsegaedutyfree/" target="_blank">INSTAGRAM</a>
+                    </h2>
+                </div>
+                <div class="Insta">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="img/88424928_252234759114976_1929764729269078291_n.jpg" alt="HERMES">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/88973430_1802118083252315_2272712268487888252_n.jpg" alt="HERMES">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/89328471_1106303296405678_5554987872615999012_n.jpg" alt="HERMES">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!--//INSTAGRAM-->
+            
+            <section id="content">
+                <div class="title mobile">
+                        <h2>FOLLOW US</h2>
+                </div>
+                    <ul class="follow mobile">
+                        <li class="instagram">
+                            <a href="#">instagram</a>
+                        </li>
+                        <li class="facebook">
+                            <a href="#">facebook</a>
+                        </li>
+                        <li class="youtube">
+                            <a href="#">youtube</a>
+                        </li>
+                        <li class="weibo">
+                            <a href="#">weibo</a>
+                        </li>
+                        <li class="wechat">
+                            <a href="#">wechat</a>
+                        </li>
+                    </ul>
+            </section>
+            <!--//FOLLOW US mobile-->
+            <footer id="mainfoot">
+                <div class="Notice">
+                    <div class="in_Notice">
+                        <a href="#">공지사항</a>
+                        <span class="pc"><a href="#">주대복 황금 경품 이벤트 추첨결과 발표</a></span>
+                        <span class="mobile"><a href="#">고객센터 운영 시간 변경 안내</a></span>
+                    </div>
+                </div>
+                <!--//Notice-->
+                <div class="It pc">
+                    <div class="It_in pc">
+                        <ul>
+                            <li><a href="#">입점상담안내</a></li>
+                            <li><a href="#">정보처리방침</a>
+                            </li>
+                            <li><a href="#">이용약관</a>
+                            </li>
+                            <li><a href="#">영상정보처리기기 운영관리방침</a>
+                            </li>
+                            <li><a href="#">고객의 소리</a>
+                            </li>
+                            <li><a href="#">신세계백화점</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--//It-->
+                <div class="foot">
+                    <div class="foot_In">
+                        <div class="Ft_last">
+                            <span class="logo"><img src="img/img_flogo.png" alt="로고"></span>
+                        </div>
+                        <div class="area pc">
+                            <div>
+                                ㈜신세계디에프 대표이사 손영식 사업자등록번호 : 864-81-00077
+                            </div>
+                            <div class="area_t">서울특별시 중구 소공로 48, 3층, 8층, 12층(회현동2가, 남산센트럴타워)<br></div>
+                            <div>COPYRIGHT ⓒ BY SHINSEGAE DUTY FREE. ALL RIGHT RESERVED.</div>
+                        </div>
+                        <div class="area mobile">
+                            <div>
+                                ㈜신세계디에프 대표이사 손영식 <br />사업자등록번호 : 864-81-00077
+                            </div>
+                            <div class="area_t">서울특별시 중구 소공로 48, 3층, 8층, 12층<br />(회현동2가, 남산센트럴타워)<br></div>
+                            <div>COPYRIGHT ⓒ BY SHINSEGAE DUTY FREE.</div>
+                        </div>
+                        <div class="Ft_logo">
+                            <img src="img/logo_C_footer_PC.png" alt="ccm 인증기업">
+                        </div>
+                        <div class="Ft_sns pc">
+                            <ul>
+                                <li>
+                                    <a href="https://www.instagram.com/shinsegaedutyfree/" target="_blank">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.facebook.com/shinsegaedutyfree" target="_blank">
+                                        <i class="fab fa-facebook-square"></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.youtube.com/channel/UCfbyfGvj0q-AZn67kQSovtg" target="_blank">
+                                        <i class="fab fa-youtube"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.weibo.com/ssgdfs" target="_blank">
+                                        <i class="fab fa-weibo"></i>
+                                    </a>
+                                </li>
+                                <li class="webchat">
+                                    <a href="#"><i class="fab fa-weixin"></i></a>
+                                    <div class="weibo">
+                                        <strong class="weibo_tit">Scan Wechat QR</strong>
+                                        <button type="button" class="btnClose"></button>
+                                        <img src="img/img_qr_wechat.jpg" alt="qrcode-wechat">
+                                        <span class="weibo_txt">ID :<span> ShinsegaeDutyFree</span></span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <div id="mask pc">
+                <div class="window pc">
+                    <img src="img/coupon_pc_kr_05.png" alt="누구나 누리는 신세계 면세점 할인혜택">
+                    <a href="#" class="close pc">
+                        <i class="fas fa-times">
+                            <span>팝업창 닫기</span>
+                        </i>
+                    </a>
+                </div>
+            </div>
+            <div id="mask mobile">
+                <div class="window mobile">
+                    <img src="img/coupon_m_kr_05.png" alt="누구나 누리는 신세계 면세점 할인혜택">
+                    <a href="#" class="close mobile">
+                        <i class="fas fa-times">
+                            <span>팝업창 닫기</span>
+                        </i>
+                    </a>
+                </div>
+            </div>
+        </main>
+        <!--//main-->
+    </div>
+
+<script>
+    'use strict';
+    alert('이 페이지는 취업 지원을 위한 비상업적 포트폴리오 용도로 사용됨을 알려드립니다.')
+    /*$('#content div.NEW ul.indicator li a').on('click', function() {
+      var index = $('#content div.NEW ul.indicator li').index($(this).parent());
+        newSlide(index + 1);
+      $('#content div.NEW ul.indicator li').removeClass('on');
+      $(this).parent().addClass('on');
+   });
+   
+   var numCont = $('#content div.NEW div.Newlist > ul').length;
+   function newSlide(n) {
+    $('#content div.NEW div.Newlist > ul').removeClass('on');
+    $('#content div.NEW div.Newlist > ul:eq('+ (n - 1) +')').addClass('on');
+   }*/
+</script>
+</body>
+
+</html>
