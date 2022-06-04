@@ -1,0 +1,245 @@
+@charset "utf-8";
+
+/* reset */
+html {-webkit-text-size-adjust: none; text-size-adjust: none;}
+/*모바일에서는 반드시 작성해야함 */
+body {margin: 0;}
+h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, p, table {margin: 0; padding: 0;}
+h1, h2, h3, h4, h5, h6 {font-weight: 700;}
+main {display: block;}
+/*메인태그는 인라인으로 읽힐수도 있어서 블럭으로 처리해줌*/
+a {color: inherit; text-decoration: inherit;}
+a img {border: none;}
+/*예전 브라우저 때문에 작성*/
+img {vertical-align: middle;}
+/*이미지는 약간의 공백이 생겨서 해줌*/
+li {list-style: none;}
+address, em, i, cite {font-style: normal;}
+table {border-collapse: collapse;}
+table caption {overflow: hidden; width: 0; height: 0;}
+/*접근성때문에 써줘야할 경우 숨기기위해*/
+i.fas, i.far, i.fab {vertical-align: middle; display: inline-block;}
+i.fas span, i.far span, i.fab span {position: absolute; overflow: hidden; text-indent: -999px;}
+.mobile {display: none !important;}
+/*모바일에서만 나와야하는 경우 pc에서는 날리는*/
+br.only-m {content: '';}
+br.only-m:after {content: '\00a0';}
+/*모바일에서만 적용됨 pc 에서는 줄바꿈이 아닌 띄어쓰기로*/
+div.hidden {position: absolute; left: -9999px;}
+
+#wrap {min-width: 1024px; overflow: hidden;}
+#skip-nav {position: fixed; width: 100%; line-height: 40px; text-align: center; top: -42px; background: rgba(0,0,0,.6); color: #fff; font-size: 16px; z-index: 100000; transition: top 0.3s;}
+#skip-nav:focus {top: 0;}
+/*//.skipnavi*/
+
+body {width: 100%; height: auto; font: 15px 'Roboto', 'Noto Sans KR', sans-serif; color: #535353;}
+
+#inner_wrap {width: 100%; z-index: 10; background: #fff;}
+#top {width: 1200px; height: 50px; margin: 0 auto; text-align: right; position: relative;border-bottom: 1px solid #eee; font-size: 14px; color: #bbb; margin: 0 auto;}
+#top .tnb {width: 100%; height: }
+#top ul li {line-height: 50px;}
+#top ul > li:nth-child(1) {color: #333333;}
+#top ul > li + li::before {content: ''; background: #bbb; width: 2px; height: 2px; position: absolute; top: 50%; margin-left: -15px; border-radius: 50%;}
+#top .tnb ul,li {display: inline-block; margin-right: 20px;}
+#top .ER {margin-right: 20px; color: #333333;}
+#top .dfs {display: block; float: right; color: #333333; position: relative; background: url(../img/ico_clip.png) no-repeat 0 center; padding: 15px 20px ;}
+/*//tnb*/
+
+#wrap .gnb {width: 1200px; margin: 0 auto; height: 90px;}
+#wrap .gnb .logo {width: 130px; float: left; padding-top: 30px;}
+/*//.gnb.logo*/
+
+#wrap .gnb .gnb_menu {margin-left: 160px;}
+#wrap .gnb .gnb_menu > li {float: left; width: 148px; margin: 0; text-align: center;}
+#wrap .gnb .gnb_menu > li > a {display: block; padding: 28px 0 ; font-size: 16px;}
+/*//.gnb .gnb_menu*/
+
+#wrap .inner_gnb {display: none; width: 100%; position: absolute; top: 140px; left: 0; border-top: 1px solid #ddd; background: #eee;}
+#wrap .inner_gnb .sub {width: 1280px; margin: 0 auto;} 
+#wrap .inner_gnb .sub .sub-gnb {float: left; height: 250px; text-align: center; border-left: 1px solid #ddd; overflow: hidden;}
+#wrap .inner_gnb .sub .sub-gnb:last-child {border-right: 1px solid #ddd;}
+#wrap .inner_gnb .sub .sub-gnb > li {display: block; width: 148px; margin: 0;}
+#wrap .inner_gnb .sub .sub-gnb:nth-child(1) {margin-left: 15%;}
+#wrap .inner_gnb .sub .sub-gnb > li > a {font-size: 14px; line-height: 40px; letter-spacing: -1px; color: #5d5d5d;}
+#wrap .inner_gnb .sub .sub-gnb > li > a:hover {color: #000;}
+/*//.inner_gnb*/
+/*//header*/
+
+#index_main {width: 100%;}
+#index_main .inner_img {position: relative; width: 100%; height: 450px; background: #eee;}
+#index_main .wrap_img {position: absolute; left: 50%; top: 0; transform: translate(-50%,0); width: 2000px; height: 100%;}
+#index_main .wrap_img .main_wrap {position: absolute; top: 0;left: 0; width: 700px; height: 450px; }
+#index_main .wrap_img .main_wrap .image img {position: absolute; top: 0; left: 0; text-align: center; margin: 0 auto;}
+#index_main .wrap_img .main_wrap .text_wrap {display: none; position: absolute; top: 0; left: 380px; height: auto; color: #fff;}
+#index_main .wrap_img .main_wrap .text_wrap.on {display: block;}
+#index_main .main_wrap .text_wrap strong {display: block; float: right; width: 300px; padding: 30px 20px 0 0; font-size: 22px; font-weight: normal;}
+#index_main .wrap_img .main_wrap .text .Intext > a {display: block; width: 250px; height: 50px;  padding: 25px 0 0 0; font-size: 27px; font-weight: bold; line-height: 50px; border-bottom: 1px solid #fff;}
+#index_main .wrap_img .main_wrap .text .Intext > a::before {content: ''; background: url(../img/ico_sel_fff.png) no-repeat; width: 30px; height: 30px; position: fixed; top: 32%; left: 31%;}
+#index_main .wrap_img .main_wrap .text .Intext .In_text {position: absolute;  display: none; padding:10px 20px;background: #8f7242; width: 210px;}
+#index_main .wrap_img .main_wrap .text .Intext .In_text.on{display: block;}
+#index_main .wrap_img .wrap_img .main_wrap .text .Intext .In_text > li {display: block; margin: 0;}
+#index_main .wrap_img .main_wrap .text .Intext .In_text  li > a {display: block; width: 210px; font-size: 14px; line-height: 30px; color: #e1c493;}
+#index_main .main_wrap .text .Intext .In_text > li > a:hover {color: #fff;}
+#index_main .main_wrap .Info {display: none; width: 250px; margin: 20px 0 0 0;}
+#index_main .main_wrap .Info.on {display: block;}
+#index_main .main_wrap .Info li {display: block;  margin: 0px; line-height: 30px;}
+#index_main .main_wrap .Info li > span {font-size: 14px; margin-right: 12px;}
+#index_main .main_wrap .Info .in_info {margin-left: 20px;}
+#index_main .main_wrap .Info .in_infoI {margin-left: 85px;}
+#index_main .main_wrap .cupon {background: none; border: none; margin: 16px 0 0 0;}
+/*//.main_wrap*/
+
+#index_main .banner {position: absolute; top: 0; right: 0; width: 1300px; height: 450px; overflow: hidden;} 
+#index_main .banner_img {position: absolute; top: 0; right: 0; width: 100%; height: 100%;}
+#index_main .banner_img li {position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
+#index_main .main_icon {width: 60px; height: 30px; position: absolute; top: 330px;left: 5%;}
+#index_main .main_icon .left_icon {display: inline-block; float: left; width: 30px; height: 30px; cursor: pointer;}
+#index_main .main_icon .right_icon {display: inline-block; float: left; width: 30px; height: 30px; cursor: pointer;}
+/*//banner_img*/
+
+#content {position: relative; width: 1200px; margin: 0 auto;}
+#content .title h2 {position: absolute; top: 0;  text-align: center; position: relative; padding: 70px; font-size: 30px; font-weight: bold;}
+#content .title h2::before {content: ''; position: absolute; top: 45%; right: 44%; background: url(../img/ico_go_link.png) no-repeat 0 0; width: 20px; height: 20px; cursor: pointer;}
+#content .contents {height: 200px; border: 1px solid #ddd;}
+#content .cont_input {width: 998px; height: 50px; margin: 0 auto; padding: 50px 0 10px; color: #8f7242;}
+#content .cont_input img {margin-left: 28px;}
+#content .cont_text {width: 120px; font-size: 20px; float: left;}
+#content input {width: 800px; height: 50px; display: block; color: #8f7242; text-align: center; font-size: 25px; border: none; border-bottom: 2px solid #8f7242; float: left;}
+#content input::placeholder {color: #8f7242; text-align: center; font-size: 25px;}
+#content .Search {width: 998px; margin: 0px auto; padding-top: 17px; font-size: 16px}
+#content .Search > span {display: inline-block; float: left; margin: 0 20px 0 270px;}
+#content .Search li {float: left; color: #999999; letter-spacing: -1px;}
+/*//브랜드*/
+
+#content .New {width: 100%; margin: 60px 0; height: 30px;}
+#content .icon_New {display: inline-block; width: 66px; background: #ef7449; color: #fff; text-align: center; font-size: 14px; line-height: 30px; float: left; font-weight: 700; margin-left: 0;}
+#content .New_titlt { font-size: 20px; color: #666666; line-height: 30px; margin-left: 30px; float: left;}
+#content .New_naviT {position: relative;}
+#content .New_navi {position: absolute; top: 0; right: 50px; display: inline-block; font-size: 20px; color: #666666; line-height: 30px;  float: right; background: #fff;}
+#content .New_navi span {font-size: 14px;}
+#content .New_navi span:nth-child(2) {color: #cccccc;}
+#content .New_navi span:nth-child(3) {color: #cccccc; margin-right: 30px;}
+#content .New_img {display: inline-block; float: right; letter-spacing: 20px; line-height: 37px;}
+#content .New_listT {position: relative; width: 1200px; height: 230px; border-bottom: 1px solid #ddd; overflow: hidden;}
+#content .New_listT .New_list {display: none; position: absolute; top: 0; left: 0; width: 100%; background: #fff;}
+#content .New_list.on {display: block;}
+#content .New_list li + li {width: 200px; height: 153px; margin-left: 41px; margin-right: 0;}
+#content .New_list dt {border-bottom: 1px solid rgba(0,0,0,0.4); padding-bottom: 15px; font-size: 18px;}
+#content .New_list dd {font-size: 14px; line-height: 30px;}
+#content .New_list .brand {display: block; width: 200px; padding-top: 20px;}
+#content .New_list .Num {display: block; width: 200px;}
+#content .New_list .BrandSpot {display: block; height: 30px; font-size: 16px; position: relative; padding-left: 30px; margin-top: 30px;}
+#content .New_list .BrandSpot::after {content: ''; background: url(../img/bg_sh_spot.png) no-repeat; position: absolute; top: 0; left: 0;  width:20px; height: 30px;}
+/*//신규 입점 브랜드*/
+
+#content .main_event ul {width: 1200px; height: 230px; border-bottom: 1px solid #ddd;}
+#content .main_event ul:last-child li {float: left;}
+#content .img_text {font-size: 18px; padding: 10px 0;}
+#content .main_event span {font-size: 14px; color: #999999;}
+#content .Membership {width: 1200px; height: 290px; position: relative;}
+/*//이벤트*/
+
+#content .card_box {width:780px; height: 290px; background: #b8a57f; padding: 30px 40px 40px 40px; box-sizing: border-box; float: left;}
+#content .card_info span {font-size: 20px; color: #000; position: relative;}
+#content .card_info span::before {content: ''; width: 1px; height: 18px; position: absolute; top: 4px; right: -20px; background: rgba(255,255,255,0.4);}
+#content .card_list {display: inline-block; padding-left: 40px; font-size: 16px; line-height: 20px;}
+#content .card_list li {color:#fbe9c5;  position: relative;}
+#content .card_list li::before {content: ''; width: 2px; height: 2px; position: absolute; top: 50%; right: -10px; background: #fbe9c5; border-radius: 50%;}
+#content .card_list li:last-child::before {display: none;}
+#content .card_list li > a:hover {color: #000; text-decoration: underline;}
+#content .card_img {width:700px; height: 140px; position: absolute; top: 105px; left: 40px; display: none;}
+#content .card_img.on {display: block;}
+#content .card_img a {background: #000; position: absolute; top: 90px; left: 260px; width: 140px; height: 40px; text-align: center; line-height: 40px; color: #a9955f; font-weight: bold; font-size: 14px; margin: 10px 0 0 0;}
+#content .card_text {display: inline-block; width: 440px; float: right;}
+#content .card_text > strong {font-size: 24px; color: #000;}
+#content .card_text p {color: #000; margin: 17px 0 0 0; font-size: 16px;}
+/*//.card_box*/
+
+#content .kakao {border: 1px solid #dedede; width: 400px; height: 290px; box-sizing: border-box; float: right; padding: 30px 30px 40px 30px; text-align: center;}
+#content .kakao_t {width: 296px; height: 20px; display: inline-block; position: relative;}
+#content .kakao_t p {font-size: 20px; float: left;}
+#content .kakao_t span {margin-left: 30px; font-size: 16px; line-height: 33px; color: #666666;}
+#content .kakao_t p::after {content: ''; position: absolute; top: 5px; left: 110px; width: 1px; height: 18px; background: #000; margin: 0 20px;}
+#content .kakao_img {padding: 30px;}
+#content .img_T {padding-top: 20px; font-size: 14px; font-weight: bold;}
+/*//멤버쉽*/
+
+#content .title_Me h2 {text-align: center; position: relative; height: 100px; padding: 60px 0 0; font-size: 30px; font-weight: bold;}
+#content .title_Me a::before {content: ''; position: absolute; top: 70px; right: 440px; background: url(../img/ico_go_link.png) no-repeat 0 0; width: 20px; height: 20px;}
+#content .NewMe {width: 100%; height: 480px; position: relative;}
+#content .New_left {width: 600px; height: 450px; background: #f1f1f1; overflow: hidden; position: relative;}
+#content .New_leftT {position: absolute; top: 0; left: 0; width: 460px; padding: 75px 90px 40px 50px; overflow: hidden; background: #f1f1f1}
+#content .left_top strong {font-size: 40px; font-weight: 400; color: #333; letter-spacing: -0.25px; line-height: 1;}
+#content .New_leftT p {font-size: 22px; color: #666; line-height: 30px; letter-spacing: -0.25px; margin-top: 30px;}
+#content .New_leftT .view {display: inline-block; font-size: 16px; font-weight: 700; margin-top: 40px; border-bottom: 1px solid #333; line-height: 24px; color: #333;}
+#content .New_Lnavi {display: inline-block; position: absolute; top: 71%; right: 150px; font-size: 14px; font-weight: 700; background-color: #f1f1f1; color: #666;}
+#content .New_LnaviI {display: inline-block; position: absolute; top: 69%; right: 80px;}
+#content .New_LnaviI a {margin-left: 20px; line-height: 35px;}
+#content .New_right {position: relative;}
+#content .New_rightI {display: none; position: absolute; top: -400px; right: 0;}
+#content .New_rightI.on {display: block;}
+/*//New Me,New Now*/
+
+#content .title_In h2 {text-align: center; position: relative; height: 100px; padding: 60px 0 0; font-size: 30px; font-weight: bold;}
+#content .title_In a::before {content: ''; position: absolute; top: 70px; right: 480px; background: url(../img/ico_go_link.png) no-repeat 0 0; width: 20px; height: 20px;}
+#content .Insta {width: 100%; height: 390px; overflow: hidden;}
+#content .Insta li {width: 390px; float: left; margin-right: 13px;}
+#content .Insta a {display: block; width: 100%; height: 100%; overflow: hidden;}
+#content .Insta img {width: 390px; height: 390px; transition: all 0.4s;}
+#content .Insta li:hover img {transform: scale(1.2);}
+#content .Insta li:last-child {float: right; margin: 0;}
+/*//INSTAGRAM*/
+
+#mainfoot {width: 100%;}
+#mainfoot .Notice {margin-top: 100px; border-bottom: 1px solid #ddd; border-top: 1px solid #ddd;}
+#mainfoot .in_Notice {width: 1200px; height: 60px; margin: 0 auto;  }
+#mainfoot .in_Notice a {font-size: 16px; line-height: 60px; position: relative;}
+#mainfoot .in_Notice a::after {content: ''; position: absolute; top: 0; left: 0; width: 20px; height: 20px; background: url(../img/ico_go_link.png) no-repeat; margin-left: 70px;}
+#mainfoot .in_Notice span {margin-left: 50px; color: #999999;}
+#mainfoot .in_Notice a:last-child::after {display: none;}
+#mainfoot .It {height: 90px;}
+#mainfoot .It_in {width: 1200px; height: 100%; margin: 0 auto;text-align: center; line-height: 90px; color: #333333; font-size: 16px;}
+#mainfoot .It_in li {padding-left: 20px;}
+#mainfoot .foot {background: #333; height: 270px; padding: 55px 0 0 0; box-sizing: border-box;}
+#mainfoot .foot_In {width: 1200px; height: 100px; margin: 0 auto;}
+#mainfoot .Ft_last {display: inline-block; float: left;}
+#mainfoot .area {margin-left: 50px; display: inline-block; float: left; color: #bfbfbf; font-size: 14px; font-weight: 300; letter-spacing: -0.25px;}
+#mainfoot .area_t {margin-top: 10px;}
+#mainfoot .Ft_logo img {float: left; margin-left: 30px;}
+#mainfoot .Ft_sns {display: inline-block; margin-left: 50px;}
+#mainfoot .Ft_sns li {font-size: 30px; margin: 10px 0 0 10px; color: #aaaaaa; position: relative;}
+#mainfoot .webchat {cursor: pointer;}
+#mainfoot .weibo {width: 161px; height: 210px; position: relative; position: absolute; top: -210px; right: 0; line-height: 20px; background: #fff; border: 1px solid #000; overflow: hidden; display: none;}
+#mainfoot .weibo.on {display: block;}
+#mainfoot .weibo_tit {font-size: 16px; color: #333; margin-left: 10px;}
+#mainfoot .weibo button {margin: 0; padding: 0; border: 0;}
+#mainfoot .btnClose {display: inline-block; position: absolute; top: 4px; right: 2px; background: url(../img/bg_qr_close.png) no-repeat 50% 50%; width: 20px; height: 20px;}
+#mainfoot .weibo img {width: 150px; height: 150px; vertical-align: middle; margin-left: 5px;}
+#mainfoot .weibo_txt {font-size: 14px; color: #333; margin-left: 10px;}
+/*//.mainfoot*/
+
+#mask {position:fixed; z-index:9000; background-color:rgba(96, 96, 96,.8); display:none; left:0; top:0; width: 100%;}
+.window{position: relative; display: none; position: fixed; left:50%; top:50%; z-index:10000; transform: translate(-50%,-50%);}
+.window .close i {display: block; position: absolute; top: 0; right: 5px; width: 20px; height: 20px; font-size: 30px; color: #fff;}
+.window .close span {display: inline-block; text-indent: -9999px;}
+/*//#mask*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
